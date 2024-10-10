@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style type="text/css">
+        body{
+            background-image: url(https://media.istockphoto.com/id/1133454349/vector/draped-net-pattern-on-ripple-thin-curves-abstract-vector-colored-waves-guilloche-art-line.jpg?s=612x612&w=0&k=20&c=0u3KOfddHrFpBiHgqJ7YuK79bqcFClz62hbUUCFA6x4=);
+        }
+.main{
+    border: 8px solid black;
+    border-color: lightgreen lightsalmon lightcoral lightskyblue ;
+    -moz-box-shadow: 5px 10px 5px lightgrey; 
+-webkit-box-shadow: 5px 10px 5px lightgrey ; 
+box-shadow: 10px 15px 20px rgb(75, 75, 75) ; 
+width: 50%; 
+height: 720px;
+display: flex;
+font-family: Kanit;
+justify-content: left;
+flex-direction: column;
+gap: 20px;
+margin-top: 100px;
+margin-left: 400px;
+background-color: white;
+}
+.info{
+    margin-left: 30px;
+}
+#in-div{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    gap: 70px;
+    margin-left: 30px;
+border-bottom: 2px solid lightgrey;
+margin-right: 30px;
+padding-bottom: 5px;
+}
+#in-div:hover{
+    color: #28a745 ;
+    border-bottom: 2px solid #28a745;
+}
+@media screen and (max-device-width:768px) {
+    .main{
+        height: 790px;
+        margin-left: 150px;
+    }
+}
+@media screen and (max-device-width:425px) {
+    .main{
+        width: 70%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-device-width:320px) {
+    .main{
+        width: 90%;
+        margin-left: 50px;
+    }
+}
+    </style>
+    <div class="main">
+        <h1 class="info">STUDENT INFORMATION</h1>
+       <div class="name" id="in-div"><span>Student Name</span><span id="sn" class="inn-div">NAME</span></div>
+       <div class="urdu" id="in-div"> <span>Urdu</span><span id="umarks" class="inn-div">00</span></div>
+       <div class="eng" id="in-div"><span>English</span><span id="emarks" class="inn-div">000</span></div>
+       <div class="maths" id="in-div"><span>Mathematics</span><span id="mmarks" class="inn-div">00</span></div>
+       <div class="islam" id="in-div"><span>Islamiat</span><span id="imarks" class="inn-div">00</span></div>
+       <div class="physics" id="in-div"><span>Physics</span><span id="pmarks" class="inn-div">00</span></div>
+       <div class="chem" id="in-div"><span>Chemistry</span><span id="cmarks" class="inn-div">00</span></div>
+       <div class="bio" id="in-div"><span>Biology</span><span id="bmarks" class="inn-div">00</span></div>
+       <div class="total" id="in-div"><span>Total</span><span id="tmarks" class="inn-div">000</span></div>
+       <div class="percent" id="in-div"><span>Percentage</span><span id="per" class="inn-div">00%</span></div>
+       <div class="grade" id="in-div"><span>Grade</span><span id="grd" class="inn-div">-</span></div>
+       <div class="scholar" id="in-div"><span>Scholarship</span><span id="ship" class="inn-div">-</span></div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
